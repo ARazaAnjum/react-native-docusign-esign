@@ -1,0 +1,50 @@
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.3.1'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        pickFirst "META-INF/services/javax.ws.rs.ext.MessageBodyReader"
+        pickFirst "META-INF/services/javax.ws.rs.ext.MessageBodyWriter"
+        pickFirst "META-INF/services/com.sun.jersey.spi.inject.InjectableProvider"
+        pickFirst "META-INF/jersey-module-version"
+        pickFirst "META-INF/NOTICE"
+        pickFirst "META-INF/LICENSE"
+        pickFirst "META-INF/services/com.fasterxml.jackson.databind.Module"
+        pickFirst "META-INF/services/com.fasterxml.jackson.core.ObjectCodec"
+        pickFirst "META-INF/services/com.fasterxml.jackson.core.JsonFactory"
+    }
+
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.facebook.react:react-native:+'
+    compile "com.docusign:docusign-esign-java:2.1.0"
+}
+  

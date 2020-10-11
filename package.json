@@ -1,0 +1,22 @@
+{
+  "name": "react-native-docusign-esign",
+  "version": "1.0.4",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msv300/react-native-docusign-esign.git"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Sakthivel M <msv300@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.41.2",
+    "react-native-windows": "0.41.0-rc.1"
+  }
+}
