@@ -15,7 +15,6 @@
   "keywords": [
     "react-native"
   ],
-  "author": "Sakthivel M <msv300@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2",
